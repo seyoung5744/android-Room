@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+      android:id="@+id/rankingToolBar"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/white"
+      android:elevation="1dp"
+      android:contentInsetStart="0dp">
+
+
+      <TextView
+        style="@style/appBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/ranking">
+
+      </TextView>
+
+      <Button
+        android:id="@+id/rankingToolBarTuneButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/ic_tune"
+        android:stateListAnimator="@null" />
+
+    </Toolbar>
+
+    <LinearLayout
+      android:id="@+id/listTitleLinearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/rankingFragmentMonthTextView"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:orientation="horizontal">
+
+      <TextView
+        style="@style/ListTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="@string/ranking" />
+
+      <TextView
+        style="@style/ListTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/mapname" />
+
+      <TextView
+        style="@style/ListTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/around" />
+
+      <TextView
+        android:id="@+id/rankingfiltermode"
+        style="@style/ListTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="@string/numerofruns" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/divisionTextView"
+      style="@style/divisionTextView" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rank_recycler_map"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginRight="20dp" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/rankingRecyclerRouteisEmpty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/noroute"
+    android:textSize="20dp"
+    android:visibility="gone" />
+
+  <!--필터 적용 레이아웃-->
+  <LinearLayout
+    android:id="@+id/tuneLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+      android:id="@+id/filterLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:paddingBottom="20dp">
+
+      <TextView
+        style="@style/tuneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/sort" />
+
+      <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+          android:id="@+id/tuneRadioBtnExecute"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:background="@drawable/filter_button"
+          android:button="@null"
+          android:checked="true"
+          android:gravity="center"
+          android:padding="5dp"
+          android:text="@string/execute_order"
+          android:textColor="@drawable/tune_text_selector" />
+
+        <RadioButton
+          android:id="@+id/tuneRadioBtnLike"
+          android:layout_width="100dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="10dp"
+          android:background="@drawable/filter_button"
+          android:button="@null"
+          android:gravity="center"
+          android:padding="5dp"
+          android:text="@string/like_order"
+          android:textColor="@drawable/tune_text_selector" />
+
+      </RadioGroup>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+          style="@style/tuneText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="@string/distance" />
+
+        <TextView
+          android:id="@+id/progressTextView"
+          style="@style/tuneText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="100+"
+          android:textColor="@color/red"/>
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:text="km"
+          android:textSize="16dp" />
+
+      </LinearLayout>
+
+      <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:max="100"
+        android:min="1"
+        android:progress="100"
+        />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1"/>
+
+        <View
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="100+" />
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <Button
+          android:id="@+id/allDeleteButton"
+          style="@style/buttonTextRedText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/button_empty_background"
+          android:text="@string/delete_all" />
+
+        <View
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+        <Button
+          android:id="@+id/applyButton"
+          style="@style/buttonText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/button_background"
+          android:text="@string/apply" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/disappearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/blackAlpha"
+      android:orientation="vertical">
+
+    </LinearLayout>
+  </LinearLayout>
+
+
+</FrameLayout>

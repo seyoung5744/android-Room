@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <Toolbar
+      android:id="@+id/rankingToolBar"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/white"
+      android:elevation="1dp"
+      android:contentInsetStart="0dp">
+
+    <TextView
+      android:id="@+id/challengeAppBarText"
+      style="@style/appBarText"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="챌린지" />
+  </Toolbar>
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rankingToolBar">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:orientation="vertical">
+
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000">
+
+
+        <com.github.demono.AutoScrollViewPager
+          android:id="@+id/adChallengeScrollViewPager"
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:layout_margin="5dp"
+          android:background="#00000000"
+          app:slideDirection="right"
+          app:slideDuration="5000"
+          app:slideInterval="5000"
+          app:stopWhenTouch="true" />
+
+        <LinearLayout
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/adChallengeScrollViewPager"
+          android:layout_alignParentEnd="true"
+          android:layout_margin="10dp">
+
+          <TextView
+            android:id="@+id/adChallengeCountTextView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="1/20" />
+        </LinearLayout>
+
+      </RelativeLayout>
+
+      <TextView
+        android:id="@+id/divisionTextView"
+        style="@style/divisionTextView" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+          android:id="@+id/btn_challenge_from"
+          style="@style/ListTitle"
+          android:layout_width="130dp"
+          android:layout_height="35dp"
+          android:layout_margin="7dp"
+          android:layout_weight="1"
+          android:background="@drawable/button_empty_background"
+          android:text="대회 시작일" />
+
+        <Button
+          android:id="@+id/btn_challenge_to"
+          style="@style/ListTitle"
+          android:layout_width="130dp"
+          android:layout_height="35dp"
+          android:layout_margin="7dp"
+          android:layout_weight="1"
+          android:background="@drawable/button_empty_background"
+          android:text="대회 종료일" />
+
+        <Button
+          android:id="@+id/btn_challenge_region"
+          style="@style/ListTitle"
+          android:layout_width="100dp"
+          android:layout_height="35dp"
+          android:layout_margin="7dp"
+          android:layout_weight="1"
+          android:background="@drawable/button_empty_background"
+          android:text="지역" />
+
+        <Button
+
+          android:id="@+id/btn_challenge_search"
+          style="@style/ListTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="35dp"
+          android:layout_margin="7dp"
+          android:layout_weight="1"
+          android:background="@drawable/button_background"
+          android:text="검색"
+          android:textColor="@color/white" />
+      </LinearLayout>
+
+      <TextView style="@style/divisionTextView" />
+
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/challenge_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        app:layoutManager="GridLayoutManager"
+        app:spanCount="2" />
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

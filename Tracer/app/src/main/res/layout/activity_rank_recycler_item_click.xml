@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/white"
+      android:elevation="1dp"
+      android:contentInsetStart="0dp">
+
+      <TextView
+        style="@style/appBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/map_record"/>
+    </Toolbar>
+
+    <RelativeLayout
+      android:id="@+id/RelativeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="10dp">
+
+      <ImageView
+        android:id="@+id/rankRoutePriview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#00000000"
+        android:scaleType="fitXY" />
+
+      <Button
+        android:id="@+id/rankRecyclerMoreButton"
+        style="@style/buttonText"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="@string/learn_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+      android:id="@+id/mapnamehorizontallayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="5dp"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/rankRecyclerMapTitle"
+        style="@style/ListDetail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosansmedium"
+        android:textSize="18sp" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rankRecyclerProfileImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/rankRecyclerMapTitle"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_profile_logo"
+        app:civ_border_color="@color/gray"
+        app:civ_border_width="2dp" />
+
+
+      <TextView
+        android:id="@+id/rankRecyclerNickname"
+        style="@style/ListDetail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rankRecyclerProfileImage"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rankRecyclerProfileImage"
+        android:textSize="18sp" />
+
+
+      <ImageView
+        android:id="@+id/rankRecyclerHeart"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toStartOf="@id/rankRecyclerHeartCount"
+        android:src="@drawable/ic_favorite_border_black_24dp" />
+
+      <TextView
+        android:id="@+id/rankRecyclerHeartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true" />
+
+
+      <TextView
+        android:id="@+id/rankRecyclerHeartSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="off"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+      android:id="@+id/gubun1"
+      style="@style/divisionTextView"
+      android:layout_below="@+id/mapnamehorizontallayout"
+      android:layout_marginTop="5dp" />
+
+
+    <TextView
+      android:id="@+id/topplayertextview"
+      style="@style/ListDetail1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/gubun1"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:gravity="center"
+      android:text="@string/top_player" />
+
+    <TextView
+      android:id="@+id/gubun2"
+      style="@style/divisionTextView"
+      android:layout_below="@+id/topplayertextview" />
+
+    <LinearLayout
+      android:id="@+id/infolayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/gubun2"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:orientation="horizontal">
+
+      <TextView
+        style="@style/ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="@string/ranking" />
+
+      <TextView
+        style="@style/ListTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/player" />
+
+      <TextView
+        style="@style/ListTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/laptime" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rankRecyclerItemClickRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/infolayout"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"></androidx.recyclerview.widget.RecyclerView>
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>

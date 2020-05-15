@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <Preference
+    android:key="myInformation"
+    android:title="@string/my_information">
+  </Preference>
+
+  <PreferenceCategory
+    android:title="@string/TTS">
+
+    <!--
+    <ListPreference
+      android:defaultValue="ko"
+      android:entries="@array/language"
+      android:entryValues="@array/language_values"
+      android:key="language"
+      android:negativeButtonText="@null"
+      android:positiveButtonText="@null"
+      android:title="@string/language"
+      android:summary="@string/languageSetting"/>
+      -->
+
+    <SwitchPreference
+      android:defaultValue="true"
+      android:key="ttsNotificationSetting"
+      android:summary="@string/TTS_check"
+      android:switchTextOff="OFF"
+      android:switchTextOn="ON"
+      android:title="@string/TTS_setting" />
+
+  </PreferenceCategory>
+
+  <PreferenceCategory
+    android:title="@string/lockScreenSetting">
+    <SwitchPreference
+      android:defaultValue="true"
+      android:key="LockScreenStatus"
+      android:title="@string/lockScreenCheck"
+      android:summary="@string/lockScreenBody"
+      android:switchTextOff="OFF"
+      android:switchTextOn="ON" />
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/noticeSetting">
+    <SwitchPreference
+      android:defaultValue="true"
+      android:key="notificationSetting"
+      android:summary="@string/noticeSound"
+      android:switchTextOff="OFF"
+      android:switchTextOn="ON"
+      android:title="@string/noticeCheck" />
+  </PreferenceCategory>
+
+  <Preference
+    android:key="logout"
+    android:title="@string/logout">
+  </Preference>
+
+  <Preference
+    android:key="unregister"
+    android:title="@string/unregister">
+  </Preference>
+</PreferenceScreen>

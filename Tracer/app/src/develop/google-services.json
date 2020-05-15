@@ -1,0 +1,88 @@
+{
+  "project_info": {
+    "project_number": "1000155468156",
+    "firebase_url": "https://tracer-9070d.firebaseio.com",
+    "project_id": "tracer-9070d",
+    "storage_bucket": "tracer-9070d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000155468156:android:a2de3203f860ec1576d4f9",
+        "android_client_info": {
+          "package_name": "com.umpa2020.tracer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000155468156-5so8iceisi2spck7mn8puvmmr2lbn00m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umpa2020.tracer",
+            "certificate_hash": "0bfed947c6a280befcfefda4a3a6fe4b12f7be79"
+          }
+        },
+        {
+          "client_id": "1000155468156-rj290oc42fgaf9o6tqpqpsoim6dn0hpg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umpa2020.tracer",
+            "certificate_hash": "dec1ba786349bff05cbce8cda15cd949aca528b0"
+          }
+        },
+        {
+          "client_id": "1000155468156-jjj60r9ecn5pi42olqg7ihten3p3gh08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umpa2020.tracer",
+            "certificate_hash": "5a5b0e38f5916d2ee42c22b443150ba09e077477"
+          }
+        },
+        {
+          "client_id": "1000155468156-mtf1lglsvic609f18bpqui4s8csk3ivd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umpa2020.tracer",
+            "certificate_hash": "4131c976dda64f040ea75391f4b7c7e149c2e959"
+          }
+        },
+        {
+          "client_id": "1000155468156-vlpkigqqun1dp5prm8fjpd02dqjiqqr1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umpa2020.tracer",
+            "certificate_hash": "a31bd37c0f0a702f8068295172653834a59e05c1"
+          }
+        },
+        {
+          "client_id": "1000155468156-m8o5qs5el7dfjevub0u5i60fqi9vtin7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.umpa2020.tracer",
+            "certificate_hash": "c5fffda0f0dbe63cb85c725b81dc6a73bc3eebde"
+          }
+        },
+        {
+          "client_id": "1000155468156-l28tn9qs82tuaaookendiluorrgl8eb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_JSUJNSsY3BM8pxFVgA9RNnR_wSDcCsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000155468156-l28tn9qs82tuaaookendiluorrgl8eb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

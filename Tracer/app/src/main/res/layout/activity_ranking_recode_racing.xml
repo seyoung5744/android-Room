@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:layout="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <Toolbar
+    android:id="@+id/rankingRecordActivityToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:elevation="1dp"
+    android:contentInsetStart="0dp">
+
+    <TextView
+      style="@style/appBarText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/rankingrecords"/>
+  </Toolbar>
+
+  <fragment
+    android:layout_below="@+id/rankingRecordActivityToolBar"
+    android:layout_above="@+id/racingBottomFrameLayout"
+    android:id="@+id/map_viewer"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".fragment.MapFragment" />
+
+  <hollowsoft.slidingdrawer.SlidingDrawer
+    android:id="@+id/racingDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="70dp"
+    layout:content="@+id/content"
+    layout:handle="@+id/racingHandle">
+
+    <Button
+      android:id="@+id/racingHandle"
+      android:layout_width="70dp"
+      android:layout_height="27dp"
+      android:background="@drawable/button_white_background"
+      android:gravity="center"
+      android:text="▲"
+      android:textColor="@color/red"
+      android:textSize="15dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_weight="1.0"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <TextView
+            style="@style/ListDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Distance_km" />
+
+          <TextView
+            android:id="@+id/racingDistanceTextView"
+            style="@style/blackMediumText18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_weight="1.0"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <TextView
+            style="@style/ListDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time" />
+
+          <Chronometer
+            android:id="@+id/racingTimerTextView"
+            style="@style/blackMediumText18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="5dp"
+          android:layout_weight="1.0"
+          android:gravity="center"
+          android:orientation="vertical">
+
+          <TextView
+            style="@style/ListDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed_km" />
+
+          <TextView
+            android:id="@+id/racingSpeedTextView"
+            style="@style/blackMediumText18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.0" />
+
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+  </hollowsoft.slidingdrawer.SlidingDrawer>
+
+  <FrameLayout
+    android:id="@+id/racingBottomFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@drawable/button_handle_background"
+    android:gravity="center"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <Button
+      android:id="@+id/racingStartButton"
+      style="@style/buttonText"
+      android:layout_width="130dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center"
+      android:background="@drawable/button_background"
+      android:gravity="center"
+      android:text="@string/start" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center">
+
+      <Button
+        android:id="@+id/racingStopButton"
+        style="@style/buttonText"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="@string/stop"
+        android:visibility="invisible" />
+
+      <Button
+        android:id="@+id/racingPauseButton"
+        style="@style/buttonTextRedText"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_empty_background"
+        android:gravity="center"
+
+        android:text="@string/pause"
+        android:visibility="invisible" />
+    </LinearLayout>
+  </FrameLayout>
+  <TextView
+    android:id="@+id/racingPauseNotificationTextView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#990044FF"
+    android:fontFamily="@font/notosansmedium"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/racingNotificationTextView"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_below="@id/rankingRecordActivityToolBar"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    android:background="#990044FF"
+    android:fontFamily="@font/notosansmedium"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="20dp" />
+
+  <TextView
+    android:id="@+id/countDownTextView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#4400FF00"
+    android:gravity="center"
+    android:text="3"
+    android:textColor="#FFFFFF"
+    android:textSize="100sp"
+    android:textStyle="bold"
+    android:visibility="gone" />
+
+</RelativeLayout>

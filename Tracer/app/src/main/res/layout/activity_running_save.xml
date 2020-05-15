@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".main.start.racing.RacingFinishActivity">
+
+  <Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:elevation="1dp"
+    android:contentInsetStart="0dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+        style="@style/appBarText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/activities" />
+
+      <Button
+        android:id="@+id/runningSaveDeleteButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_delete_red_24dp"
+        android:layout_margin="10dp"/>
+    </RelativeLayout>
+  </Toolbar>
+
+  <ScrollView
+    android:id="@+id/runningSaveScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <fragment
+        android:id="@+id/map_viewer"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        class="com.umpa2020.tracer.customUI.WorkaroundMapFragment"/>
+
+      <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/map_viewer"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/gray" />
+
+      <TextView
+        android:id="@+id/mapinformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/notosansmedium"
+        android:gravity="center"
+        android:text="@string/mapresult" />
+
+      <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/mapinformation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray" />
+
+
+      <LinearLayout
+        android:id="@+id/dataTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+          android:id="@+id/distance_Layout"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosansmedium"
+            android:gravity="center"
+            android:text="@string/distance"
+            android:textSize="15dp" />
+
+          <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosansmedium"
+            android:gravity="center"
+            android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:id="@+id/time_layout"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/map_viewer"
+          android:layout_alignParentRight="true"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosansmedium"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="15dp" />
+
+          <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosansmedium"
+            android:gravity="center"
+            android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/distance_Layout"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosansmedium"
+            android:gravity="center"
+            android:text="@string/speed_with_unit"
+            android:textSize="15dp" />
+
+          <TextView
+            android:id="@+id/speed_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosansmedium"
+            android:gravity="center"
+            android:textSize="20dp" />
+        </LinearLayout>
+      </LinearLayout>
+
+
+      <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/dataTableLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+
+
+      <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/chart"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/gray" />
+
+      <TextView
+        android:id="@+id/mapinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/notosansmedium"
+        android:gravity="center"
+        android:text="@string/mapinformation" />
+
+      <TextView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/mapinfo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray" />
+
+
+      <EditText
+        android:id="@+id/mapTitleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/notosansmedium"
+        android:hint="@string/map_title" />
+
+      <EditText
+        android:id="@+id/mapExplanationEdit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/mapTitleEdit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/notosansmedium"
+        android:gravity="top"
+        android:hint="@string/text" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapExplanationEdit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+
+        <RadioGroup
+          android:id="@+id/privacyRadioGroup"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <RadioButton
+            android:id="@+id/racingRadio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:fontFamily="@font/notosansmedium"
+            android:text="@string/competition"
+            android:textSize="12sp" />
+
+          <RadioButton
+            android:id="@+id/publicRadio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosansmedium"
+            android:text="@string/public_"
+            android:textSize="12sp" />
+
+          <RadioButton
+            android:id="@+id/privateRadio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosansmedium"
+            android:text="@string/private_"
+            android:textSize="12sp" />
+        </RadioGroup>
+      </LinearLayout>
+    </RelativeLayout>
+  </ScrollView>
+
+  <Button
+    android:id="@+id/save_btn"
+    style="@style/buttonText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/button_background"
+    android:text="@string/saveactivity" />
+
+
+</RelativeLayout>

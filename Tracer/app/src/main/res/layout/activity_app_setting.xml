@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".main.profile.settting.AppSettingActivity">
+
+  <Toolbar
+    android:id="@+id/settingActivityToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:elevation="1dp"
+    android:contentInsetStart="0dp">
+
+    <TextView
+      style="@style/appBarText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="@string/settings"/>
+  </Toolbar>
+
+  <fragment
+    android:layout_below="@+id/settingActivityToolBar"
+    android:id="@+id/preferenceSettingFrag"
+    android:name="com.umpa2020.tracer.main.profile.settting.SettingPreferenceFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+</RelativeLayout>

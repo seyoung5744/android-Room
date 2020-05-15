@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!--bottom navigation에 들어가는 메뉴-->
+  <item
+    android:id="@+id/navigation_profile"
+    android:icon="@drawable/profile_icon_text_x"
+    android:title="@string/profile" />
+  <item
+    android:id="@+id/navigation_start"
+    android:icon="@drawable/logosquare"
+    android:title="@string/start" />
+  <item
+    android:id="@+id/navigation_ranking"
+    android:icon="@drawable/ranking_icon_text_x"
+    android:title="@string/ranking" />
+  <item
+    android:id="@+id/navigation_challenge"
+    android:icon="@drawable/challenge"
+    android:title="@string/challenge" />
+</menu>

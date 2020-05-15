@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:focusable="true"
+  android:focusableInTouchMode="true"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".login.join.SignUpActivity">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+
+    <include
+      android:id="@+id/app_toolbar"
+      layout="@layout/signup_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:elevation="1dp"
+      android:contentInsetStart="0dp" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="@string/signup"
+      android:textColor="@color/black"
+      android:textSize="20dp" />
+  </FrameLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_profile_logo"
+         />
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/ic_profile_edit" />
+
+    </FrameLayout>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="10dp"
+      android:gravity="center"
+      android:text="@string/selcetimage"
+      android:textSize="18dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:paddingTop="10dp">
+
+      <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nicknameTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <EditText
+            android:id="@+id/editNickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/nick_name"
+            android:inputType="text"
+            android:maxLength="12"
+            android:maxLines="1" />
+
+          <Button
+            android:id="@+id/redundantCheckButton"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/redundant_check_change_button"
+             />
+        </FrameLayout>
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/editAge"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:focusableInTouchMode="false"
+          android:hint="@string/age_"
+          android:singleLine="true" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/genderTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+          android:id="@+id/editGender"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:focusableInTouchMode="false"
+          android:hint="@string/gender_"
+          android:singleLine="true" />
+
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <!--
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/join_change_button"
+         />
+        -->
+    <Button
+      android:id="@+id/sign_up_button"
+      style="@style/buttonText"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginBottom="10dp"
+      android:background="@drawable/button_background"
+
+      android:text="@string/sign_up" />
+
+  </LinearLayout>
+
+
+</LinearLayout>

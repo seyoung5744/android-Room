@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@color/white"
+  android:orientation="vertical"
+  tools:context=".login.join.GenderSelectActivity">
+
+  <include
+    android:id="@+id/app_toolbar"
+    layout="@layout/signup_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentInsetStart="0dp" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:id="@+id/man"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?attr/selectableItemBackground"
+      android:gravity="center_vertical"
+      android:orientation="vertical"
+      android:padding="10dp">
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/manTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/man"
+          android:textSize="20dp"/>
+
+        <ImageView
+          android:id="@+id/manCheck"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:src="@drawable/ic_check_black_30dp"
+          android:tint="@color/red"
+          android:visibility="invisible" />
+      </FrameLayout>
+
+      <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/manUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/woman"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?attr/selectableItemBackground"
+      android:gravity="center_vertical"
+
+      android:orientation="vertical"
+      android:padding="10dp">
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/womanTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/woman"
+          android:textSize="20dp"/>
+
+        <ImageView
+          android:id="@+id/womanCheck"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:src="@drawable/ic_check_black_30dp"
+          android:tint="@color/red"
+          android:visibility="invisible" />
+      </FrameLayout>
+
+      <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/womanUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        android:visibility="invisible" />
+    </LinearLayout>
+  </LinearLayout>
+
+
+  <Button
+    android:id="@+id/nextButton"
+    style="@style/buttonText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/button_background"
+    android:enabled="false"
+    android:text="@string/next" />
+</LinearLayout>

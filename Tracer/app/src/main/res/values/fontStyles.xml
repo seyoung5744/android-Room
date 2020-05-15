@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="ListTitle">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">#de2018</item>
+    <item name="android:fontFamily">@font/notosansmedium</item>
+  </style>
+
+  <style name="ListDetail">
+    <item name="android:textSize">15sp</item>
+    <item name="android:textColor">#000000</item>
+    <item name="android:fontFamily">@font/notosanslight</item>
+  </style>
+
+  <style name="MapDetail">
+    <item name="android:textSize">17sp</item>
+    <item name="android:textColor">#6799FF</item>
+    <item name="android:fontFamily">@font/notosansmedium</item>
+  </style>
+
+  <style name="ListDetail1" parent="ListDetail">
+    <item name="android:textSize">15sp</item>
+  </style>
+
+  <style name="buttonText">
+  <item name="android:textSize">15sp</item>
+  <item name="android:textColor">#ffffff</item>
+  <item name="android:fontFamily">@font/notosansmedium</item>
+</style>
+
+  <style name="buttonTextRedText" parent="buttonText">
+    <item name="android:textColor">@color/red</item>
+  </style>
+
+
+  <style name="blackBoldText20">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">#000000</item>
+    <item name="android:fontFamily">@font/notosansbold</item>
+  </style>
+
+  <style name="blackMediumText18" parent="blackBoldText20">
+    <item name="android:fontFamily">@font/notosansmedium</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">18sp</item>
+  </style>
+
+  <style name="blackMediumText20" parent="blackBoldText20">
+    <item name="android:fontFamily">@font/notosansmedium</item>
+    <item name="android:textSize">20sp</item>
+  </style>
+
+  <style name="whiteText">
+    <item name="android:fontFamily">@font/notosansmedium</item>
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="appBarText">
+    <item name="android:textSize">17sp</item>
+    <item name="android:textColor">#000000</item>
+  </style>
+
+
+  <style name="tuneText">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">#000000</item>
+  </style>
+
+
+</resources>

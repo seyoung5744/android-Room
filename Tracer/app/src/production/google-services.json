@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "261195702272",
+    "firebase_url": "https://tracer-release.firebaseio.com",
+    "project_id": "tracer-release",
+    "storage_bucket": "tracer-release.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261195702272:android:36b38c68ef5c985d64b8e5",
+        "android_client_info": {
+          "package_name": "com.umpa2020.tracer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261195702272-kvg0h009tdebl7mfg7co403hrrsa6do0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADvU48Gsx5uXnd4bphVDr4_ewzNHjeJdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261195702272-kvg0h009tdebl7mfg7co403hrrsa6do0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

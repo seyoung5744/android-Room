@@ -1,0 +1,189 @@
+<resources>
+  <string name="app_name">Tracer</string>
+
+  <!-- 회원가입 string-->
+  <string name="join_name">Join</string>
+  <string name="email">E-mail</string>
+  <string name="password">Password</string>
+  <string name="passwordCheck">PasswordCheck</string>
+  <string name="nickname">Nickname</string>
+  <string name="age">Age</string>
+  <string name="gender">Gender</string>
+
+  <string name="error_discorrent_email">Please check your email.</string>
+  <string name="txtInputInfoPWD">8 characters including a number and a lowercase letter.</string>
+  <string name="txtInputInfoNick">3-12 characters including uppercase, lowercase and numbers in English</string>
+  <string name="txtInputInfoPWCHECK">Please check your password.</string>
+  <string name="txtInputInfoEmail">This is not an exact email.</string>
+  <string name="txtInputInfoAge">Select the date of birth.</string>
+  <string name="txtInputInfoGender">Please select a gender.</string>
+
+  <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAymdWK_9DnHXKY19cuUvg0oMo_FItNvQ0</string>
+  <string name="man">Man</string>
+  <string name="woman">Woman</string>
+  <string name="next">Next</string>
+  <string name="please_login">Please login with your Google account.</string>
+  <string name="near_route">Near Route</string>
+  <string name="race">Race</string>
+  <string name="start">Start</string>
+  <string name="my_activity">My Activity</string>
+  <string name="my_route">My Route</string>
+  <string name="other_route">Route</string>
+  <string name="race_result">Race Result</string>
+  <string name="record">Record</string>
+  <string name="my">My</string>
+  <string name="maker">Maker</string>
+  <string name="ranking">Ranking</string>
+  <string name="player">Player</string>
+  <string name="laptime">Lap Time</string>
+  <string name="map_record">Map Record</string>
+  <string name="learn_more">Learn More</string>
+  <string name="top_player">Top Player</string>
+  <string name="detailedmap">Detailed Map</string>
+  <string name="mapname">Map Name</string>
+  <string name="mapdescription">Map Description</string>
+  <string name="recordanalysis">Record Analysis</string>
+  <string name="distance">Distance (km)</string>
+  <string name="time">Time</string>
+  <string name="speed_with_unit">Speed (km/h)</string>
+  <string name="thumbnail">Route Thumbnail</string>
+  <string name="altitude_sppedchart">Altitude / Speed Chart</string>
+  <string name="matchstart">Match Start</string>
+  <string name="rankingrecords">For ranking records</string>
+  <string name="creatroute">Create Route</string>
+  <string name="stop">Stop</string>
+  <string name="pause">Pause</string>
+  <string name="activities">Activity content</string>
+  <string name="mapresult">Map Result</string>
+  <string name="mapinformation">Map information record</string>
+  <string name="competition">Competition</string>
+  <string name="public_">Public</string>
+  <string name="private_">Private</string>
+  <string name="saveactivity">Save Activity</string>
+  <string name="signup">Sign Up</string>
+  <string name="selcetimage">Please select\na profile image</string>
+  <string name="nick_name">Nickname</string>
+  <string name="age_">Age</string>
+  <string name="gender_">Gender</string>
+  <string name="sign_up">Sign Up</string>
+  <string name="map_title">Map Title</string>
+  <string name="text">Text</string>
+  <string name="profile">Profile</string>
+  <string name="mystats">My Stats</string>
+  <string name="otherstats">Stats</string>
+  <string name="total_distance">Total Distance</string>
+  <string name="total_time">Total Time</string>
+  <string name="numerofruns">Execute Number</string>
+  <string name="runningmode">Running</string>
+  <string name="re_search_this_area">Re-search this area</string>
+  <string name="distance_display">Distance display</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="noroute">There are currently no saved routes.</string>
+  <string name="no_activity">There ar currently no activities.</string>
+  <string name="profile_information">My Profile</string>
+  <string name="profile_image_change">Image Change</string>
+  <string name="email_">EMAIL</string>
+  <string name="confirmation">Confirmation</string>
+  <string name="picture_select_cancel">Deselect photos</string>
+  <string name="check_duplicates">Please check for duplicates.</string>
+  <string name="nickname_already_using">this nickname is already using.</string>
+  <string name="nickname_available">Available nickname.</string>
+  <string name="please_select">Please select</string>
+  <string name="set_default_image">Would you like to set it as the default image?</string>
+  <string name="gps_activation">GPS activation</string>
+  <string name="racing_go_the_distance">You went the distance %1$s %2$s.</string>
+  <string name="racing_fail">"You failed %1$s on %2$s."</string>
+  <string name="map_save">"You made %1$s on %2$s."</string>
+
+
+  <!-- firebase string-->
+  <string name="google_storage_bucket_string" >gs://tracer-release.appspot.com/</string>
+  <string name="serachHint">Search for a place or address</string>
+
+  <!-- setting-->
+  <string name="logout">Sign out</string>
+  <string name="my_information">My information</string>
+  <string name="unregister">Unregister from tracer</string>
+  <string name="settings">Settings</string>
+  <string name="language">Language</string>
+  <string name="languageSetting">Language Setting</string>
+  <string name="TTS_setting">TTS Settings</string>
+  <string name="TTS">TTS</string>
+  <string name="TTS_check">Text-to-Speech</string>
+  <string name="noticeSetting">Notification Settings</string>
+  <string name="noticeSound">Receive notifications by sound</string>
+  <string name="noticeCheck">Notification</string>
+  <string name="lockScreenSetting">LockScreen Setting</string>
+  <string name="lockScreenBody">Record measurement is possible when setting the lock screen</string>
+  <string name="lockScreenCheck">Lock Screen</string>
+
+  <!-- LcokScreen -->
+  <string name="m">m</string>
+  <string name="km_h">Km/h</string>
+  <string name="unlock">Unlock</string>
+  <!-- TTS -->
+  <string name="pushthestartbutton">push the start button</string>
+  <string name="startRunning">"Let's start running"</string>
+  <string name="finishRunning">Finish the running</string>
+
+  <string name="goToStartPoint">Go to the starting point</string>
+  <string name="startRacing">"Let's start racing"</string>
+  <string name="finishRacing">Finish the racing</string>
+  <string name="execute">Execute</string>
+  <string name="likes">Likes</string>
+  <string name="select_type">Please select a type.</string>
+  <string name="recording">Recording</string>
+  <string name="around">Around</string>
+  <string name="start_running">Press the start button to start running.</string>
+  <string name="Distance_km">Distance</string>
+  <string name="Time">Time</string>
+  <string name="speed_km">Speed</string>
+  <string name="pause_mode">When you pause\nCompetition mode upload is not possible.\n\nDo you want to pause?</string>
+  <string name="twohundred_save">If you stop when the distance is less than 200m,\nyou cannot save.\n\nWould you like to stop?</string>
+  <string name="stop_save">If you stop now,\nsaving is not possible.\n\nWould you like to stop?</string>
+  <string name="like_logout">Would you like to logout?</string>
+  <string name="sort">Sort by</string>
+  <string name="execute_order">Execute order</string>
+  <string name="like_order">Like order</string>
+  <string name="delete_all">Delete all</string>
+  <string name="apply">Apply</string>
+  <string name="restart">Restart</string>
+  <string name="fail">Fail</string>
+  <string name="enter_address">Please enter some address</string>
+  <string name="press_hold">Press and hold to exit</string>
+  <string name="sorry">Sorry</string>
+  <string name="not_search">No results were found for your search</string>
+  <string name="cannot_find">Can\'t find location</string>
+  <string name="startpoint">You can only start within</string>
+  <string name="only_start">m of the starting point.</string>
+  <string name="move_startpoint">Go to the starting point.\nDistance left to the starting point\n</string>
+  <string name="how_type">What type would you like to play?\n\nRanking records: Ranking registration possible</string>
+  <string name="want_start">If you want to start, press the start button</string>
+  <string name="deselect_photo">Deselect photos</string>
+  <string name="cannot_save">If you stop now, saving is not possible.\n\nAre you sure you want to stop?</string>
+  <string name="pause_notsave">If you pause,\nyou will not be able to register for ranking.\n\nDo you want to pause?</string>
+  <string name="route_deviates">\n(Caution)If the route deviates more than</string>
+  <string name="resgisration">seconds, ranking registration is not possible.</string>
+  <string name="out_of_route">Out of route</string>
+  <string name="altitude" >altitude</string>
+
+  <string name="speed">speed</string>
+  <string name="Are_you_sure_to_delete_this">Are you sure to delete this running?</string>
+
+  <!--activity_racing_finish-->
+  <string name="my_rank">My rank</string>
+  <string name="top3_rank">TOP 3</string>
+  <string name="record_comparison">Record Comparison</string>
+  <string name="max_speed">Max Speed</string>
+  <string name="avg_speed">Average Speed</string>
+
+  <!--activity_racing_select_people-->
+  <string name="selection_complete">Complete</string>
+  <string name="max_five_select">Choose up to 5 virtual racer</string>
+  <string name="select_people">Virtual Racer Selection</string>
+  <string name="max_five">Up to 5 people can be chosen</string>
+
+  
+ <string name="challenge">Challenge</string>
+</resources>

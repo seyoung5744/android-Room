@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#008577</color>
+  <color name="colorPrimaryDark">#00574B</color>
+  <color name="colorAccent">#D81B60</color>
+
+  <color name="black_overlay">#66000000</color>
+
+  <color name="blackAlpha">#66000000</color>
+  <color name="black">#000000</color>
+  <color name="rankBackgroudGray">#acacae</color>
+  <color name="white">#ffffff</color>
+
+  <color name="gray">#BDBDBD</color>
+
+  <color name="red">#de2018</color>
+  <color name="lightRed">#eb4b43</color>
+  <color name="yellowGreen">#4B8A08</color>
+  <color name="lightgray">#DDF7F7F7</color>
+  <color name="green">#0dcdc0</color>
+  <color name="skyBlue">#6799FF</color>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white">
+
+  <Toolbar
+    android:id="@+id/profileToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:elevation="1dp">
+
+    <TextView
+      style="@style/appBarText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="@string/profile" />
+  </Toolbar>
+
+  <LinearLayout
+    android:layout_below="@+id/profileToolBar"
+    android:id="@+id/profileFragmentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/profileImageView"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_marginTop="10dp"
+      android:src="@drawable/ic_profile_logo"
+      app:civ_border_color="@color/gray"
+      app:civ_border_width="2dp" />
+
+    <TextView
+      android:id="@+id/profileIdTextView"
+      style="@style/blackBoldText20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="20dp"
+      android:fontFamily="@font/notosansmedium" />
+  </LinearLayout>
+
+
+  <TextView
+    android:id="@+id/profileFragmentMyData"
+    style="@style/ListDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/profileFragmentLinearLayout"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/textlines"
+    android:padding="10dp"
+    android:text="@string/otherstats" />
+
+  <LinearLayout
+    android:id="@+id/rankingDetailInfoLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/profileFragmentMyData"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="40dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/ListDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance" />
+
+      <TextView
+        android:id="@+id/profileFragmentTotalDistance"
+        style="@style/MapDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosansmedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <TextView
+        style="@style/ListDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_time" />
+
+      <TextView
+        android:id="@+id/profileFragmentTotalTime"
+        style="@style/MapDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosansmedium" />
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView style="@style/divisionTextView" />
+
+    <TextView
+      android:id="@+id/otherProfileRouteTextView"
+      style="@style/ListDetail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:padding="10dp"
+      android:text="@string/other_route" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignEnd="@id/otherProfileRouteTextView"
+      android:layout_centerVertical="true"
+      android:background="@drawable/ic_chevron_right_black_24dp"
+      android:backgroundTint="@color/black"
+      android:paddingTop="5dp"
+      android:textSize="18dp" />
+
+  </RelativeLayout>
+
+  <!--     <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               style="@style/divisionTextView"/>
+
+           <TextView
+               android:id="@+id/profileRecordTextView"
+               style="@style/ListDetail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:padding="10dp"
+               android:text="나의 활동" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignEnd="@id/profileRecordTextView"
+               android:layout_centerVertical="true"
+               android:paddingTop="5dp"
+               android:text=">  "
+               android:textSize="18dp" />
+
+
+       </RelativeLayout>
+-->
+  <TextView style="@style/divisionTextView" />
+</RelativeLayout>

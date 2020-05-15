@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="12dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  app:cardCornerRadius="8dp"
+  app:cardElevation="5dp"
+  app:cardPreventCornerOverlap="true"
+  app:cardUseCompatPadding="true"
+  android:orientation="vertical"
+  android:id="@+id/challenge_cardview">
+
+
+
+  <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    
+    <ImageView
+      android:id="@+id/challenge_map"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginTop="5dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/login_image"/>
+
+    <TextView
+      android:id="@+id/challenge_race_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/challenge_map"
+      android:layout_marginTop="5dp"
+      android:layout_centerHorizontal="true"
+      android:text="경기 이름"
+      android:textStyle="bold"/>
+    <LinearLayout
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_below="@id/challenge_race_name">
+
+      <TextView
+        android:id="@+id/challenge_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.04.22"
+        />
+
+      <TextView
+        android:id="@+id/challenge_locale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="서울" />
+
+    </LinearLayout>
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

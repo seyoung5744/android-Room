@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <Toolbar
+    android:id="@+id/profileFragmentToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:elevation="1dp">
+
+    <TextView
+      style="@style/appBarText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="@string/profile" />
+
+    <ImageView
+      android:id="@+id/appSettingButton"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_gravity="right"
+      android:layout_marginRight="15dp"
+      android:src="@drawable/ic_gear"
+      android:tint="@color/red"
+      tools:ignore="RtlHardcoded" />
+  </Toolbar>
+
+  <LinearLayout
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    android:gravity="center"
+    android:id="@+id/profileFragmentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/profileFragmentToolBar"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/profileImageView"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:src="@drawable/ic_profile_logo"
+      app:civ_border_color="@color/gray"
+      app:civ_border_width="2dp" />
+
+    <TextView
+      android:id="@+id/profileIdTextView"
+      style="@style/blackBoldText20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:fontFamily="@font/notosansmedium" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/rankingDetailInfoLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/profileFragmentLinearLayout"
+    android:orientation="horizontal"
+    android:background="@drawable/textline_background_down"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/profileFragmentTotalDistance"
+        style="@style/MapDetail"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/profileFragmentTotalTime"
+        style="@style/MapDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+
+      <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_time" />
+    </LinearLayout>
+  </LinearLayout>
+
+
+
+  <TextView
+    android:background="@drawable/textline_background_up"
+    android:layout_marginTop="20dp"
+    android:id="@+id/profileRouteTextView"
+    style="@style/ListDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rankingDetailInfoLinearLayout"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:padding="10dp"
+    android:text="@string/my_route" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/profileRouteTextView"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/ic_chevron_right_black_24dp"
+    android:backgroundTint="@color/black"
+    android:textSize="18dp" />
+
+  <TextView
+    android:id="@+id/divisionTextView2"
+    style="@style/divisionTextView"
+    android:layout_below="@+id/profileRouteTextView" />
+
+  <TextView
+    android:background="@drawable/textline_background_down"
+    android:layout_below="@+id/divisionTextView2"
+    android:id="@+id/profileRecordTextView"
+    style="@style/ListDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:padding="10dp"
+    android:text="@string/my_activity" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/profileRecordTextView"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/ic_chevron_right_black_24dp"
+    android:backgroundTint="@color/black"
+    android:textSize="18dp" />
+
+</RelativeLayout>

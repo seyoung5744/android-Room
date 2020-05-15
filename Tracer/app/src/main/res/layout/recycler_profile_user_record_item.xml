@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingTop="10dp"
+  android:paddingBottom="10dp"
+  android:layout_marginStart="20dp"
+  android:layout_marginEnd="20dp"
+  android:orientation="horizontal">
+
+  <ImageView
+    android:id="@+id/profileUserActivityMapImageView"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@color/gray"
+    android:scaleType="fitXY" />
+
+  <TextView
+    android:gravity="center_vertical"
+    android:layout_marginStart="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="~맵을 @@언제 @@했습니다 요런형식으로"
+    android:id="@+id/profileUserActivityTextView"/>
+
+</LinearLayout>

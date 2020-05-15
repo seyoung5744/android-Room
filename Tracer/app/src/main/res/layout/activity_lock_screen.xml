@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/lockScreenView"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/login_image"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".lockscreen.LockScreenActivity">
+
+
+  <Chronometer
+    android:id="@+id/lockScreenChronometer"
+    style="@style/whiteText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="100sp"
+    android:gravity="center"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/lockScreenInfoLayout"/>
+
+  <LinearLayout
+    android:id="@+id/lockScreenInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/lockScreenChronometer"
+    app:layout_constraintBottom_toTopOf="@+id/scrollImageView">
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/lockscreenDistanceTextView"
+        style="@style/whiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0.00"
+        android:textSize="60sp" />
+
+      <TextView
+        style="@style/whiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/m"
+        android:gravity="center"
+        android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/lockscreenSpeedTextView"
+        style="@style/whiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0.0"
+        android:textSize="60sp" />
+
+      <TextView
+        style="@style/whiteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/km_h"
+        android:gravity="center"
+        android:textSize="30sp" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <ImageView
+    android:id="@+id/scrollImageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_up_arrow"
+    app:layout_constraintTop_toBottomOf="@+id/lockScreenInfoLayout"
+    app:layout_constraintBottom_toTopOf="@+id/lockScreenUnLockTextView"
+    />
+
+  <TextView
+    android:id="@+id/lockScreenUnLockTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/unlock"
+    android:textSize="20sp"
+    style="@style/whiteText"
+    android:gravity="center"
+    app:layout_constraintTop_toBottomOf="@+id/scrollImageView"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

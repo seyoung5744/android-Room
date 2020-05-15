@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".main.profile.settting.MyInformationActivity">
+
+  <include
+    android:id="@+id/app_toolbar"
+    layout="@layout/signup_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="1dp" />
+
+  <LinearLayout
+    android:background="@drawable/textline_background_down"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center"
+    android:orientation="vertical">
+    <FrameLayout
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_profile_logo"
+        />
+
+      <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/ic_profile_edit" />
+    </FrameLayout>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_gravity="center"
+      android:text="@string/profile_image_change"
+      android:textSize="18dp" />
+  </LinearLayout>
+
+  <TableLayout
+    android:background="@drawable/textlines"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 첫번쨰 행-->
+    <TableRow
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp">
+      <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_"
+        android:textSize="15sp"/>
+      <TextView
+        android:layout_weight="3"
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"/>
+    </TableRow>
+
+    <TextView
+      android:layout_width="match_parent"
+      style="@style/divisionTextView" />
+
+    <!-- 두번쨰 행-->
+    <TableRow
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp">
+      <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nick_name"
+        android:textSize="15sp"/>
+      <TextView
+        android:layout_weight="3"
+        android:id="@+id/nickNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+    </TableRow>
+    <TextView
+      android:layout_width="match_parent"
+      style="@style/divisionTextView" />
+
+    <!-- 세번쨰 행-->
+    <TableRow
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginBottom="15dp">
+      <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_"
+        android:textSize="15sp"/>
+      <TextView
+        android:layout_weight="3"
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+    </TableRow>
+    <TextView
+      android:layout_width="match_parent"
+      style="@style/divisionTextView" />
+
+    <!-- 네번쨰 행-->
+    <TableRow
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      android:layout_marginTop="15dp"
+      android:paddingBottom="15dp">
+      <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_"
+        android:textSize="15sp"/>
+      <TextView
+        android:layout_weight="3"
+        android:id="@+id/genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"/>
+    </TableRow>
+  </TableLayout>
+
+  <View
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+
+  <Button
+    android:layout_gravity="bottom"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:id="@+id/profileChangeButton"
+    style="@style/buttonText"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/button_background"
+    android:text="@string/confirmation" />
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<resources>
+  <string name="app_name">Tracer</string>
+
+  <!-- 회원가입 string-->
+  <string name="join_name">Join</string>
+  <string name="email">E-mail</string>
+  <string name="password">Password</string>
+  <string name="passwordCheck">PasswordCheck</string>
+  <string name="nickname">Nickname</string>
+  <string name="age">Age</string>
+  <string name="gender">Gender</string>
+
+  <string name="error_discorrent_email">이메일을 확인해주세요.</string>
+  <string name="txtInputInfoPWD">영문 대문자, 소문자, 숫자, 특수문자를 포함하여 8자 이상</string>
+  <string name="txtInputInfoNick">영문 대문자, 소문자, 숫자를 포함하여 3~12자</string>
+  <string name="txtInputInfoPWCHECK">비밀 번호를 확인하세요.</string>
+  <string name="txtInputInfoEmail">정확한 이메일이 아닙니다.</string>
+  <string name="txtInputInfoAge">생년월일을 선택하세요.</string>
+  <string name="txtInputInfoGender">성별을 선택하세요.</string>
+
+  <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAymdWK_9DnHXKY19cuUvg0oMo_FItNvQ0</string>
+  <string name="man">남성</string>
+  <string name="woman">여성</string>
+  <string name="next">다음</string>
+  <string name="please_login">구글 계정으로 로그인 하십시오.</string>
+  <string name="near_route">주변 루트</string>
+  <string name="race">경기</string>
+  <string name="start">시작</string>
+  <string name="my_activity">나의 활동</string>
+  <string name="my_route">나의 루트</string>
+  <string name="other_route">루트</string>
+  <string name="race_result">경기 결과</string>
+  <string name="record">기록</string>
+  <string name="my">나</string>
+  <string name="maker">게시자</string>
+  <string name="ranking">랭킹</string>
+  <string name="player">플레이어</string>
+  <string name="laptime">랩 타임</string>
+  <string name="map_record">맵 기록</string>
+  <string name="learn_more">더 알아보기</string>
+  <string name="top_player">상위 플레이어</string>
+  <string name="detailedmap">맵 상세보기</string>
+  <string name="mapname">맵 이름</string>
+  <string name="mapdescription">맵 설명</string>
+  <string name="recordanalysis">기록 분석</string>
+  <string name="distance">거리 (km)</string>
+  <string name="time">시간</string>
+  <string name="speed_with_unit">속력 (km/h)</string>
+  <string name="thumbnail">루트 썸네일</string>
+  <string name="altitude_sppedchart">고도 / 속도 차트</string>
+  <string name="matchstart">경기 시작</string>
+  <string name="rankingrecords">랭킹 기록용</string>
+  <string name="creatroute">루트 만들기</string>
+  <string name="stop">정지</string>
+  <string name="pause">일시정지</string>
+  <string name="activities">활동 내용</string>
+  <string name="mapresult">맵 결과</string>
+  <string name="mapinformation">맵 정보 기록</string>
+  <string name="competition">경쟁</string>
+  <string name="public_">공개</string>
+  <string name="private_">비공개</string>
+  <string name="saveactivity">활동 저장</string>
+  <string name="signup">회원가입</string>
+  <string name="selcetimage">프로필 이미지를\n선택해주세요</string>
+  <string name="nick_name">닉네임</string>
+  <string name="age_">(만)나이</string>
+  <string name="gender_">성별</string>
+  <string name="sign_up">회원가입</string>
+  <string name="map_title">맵 제목</string>
+  <string name="text">Text</string>
+  <string name="profile">프로필</string>
+  <string name="mystats">내 통계</string>
+  <string name="otherstats">통계</string>
+  <string name="total_distance">총 거리</string>
+  <string name="total_time">총 주행시간</string>
+  <string name="numerofruns">실행수</string>
+  <string name="runningmode">러닝 모드</string>
+  <string name="re_search_this_area">현 위치에서 재검색</string>
+  <string name="distance_display">떨어진 거리 표시</string>
+  <string name="yes">예</string>
+  <string name="no">아니오</string>
+  <string name="noroute">현재 저장된 루트가 없습니다.</string>
+  <string name="no_activity">현재 저장된 경로가 없습니다.</string>
+  <string name="profile_information">내 정보</string>
+  <string name="profile_image_change">프로필 이미지 변경</string>
+  <string name="email_">이메일</string>
+  <string name="confirmation">확인</string>
+  <string name="picture_select_cancel">사진 선택 취소</string>
+  <string name="check_duplicates">중복 확인을 해주십시오.</string>
+  <string name="nickname_already_using">이미 사용중인 닉네임입니다.</string>
+  <string name="nickname_available">사용 가능한 닉네임입니다.</string>
+  <string name="please_select">선택해주세요.</string>
+  <string name="set_default_image">기본 이미지로 설정하시겠습니까?</string>
+  <string name="gps_activation">GPS 활성화</string>
+  <string name="racing_go_the_distance">%1$s 을(를) %2$s 에 완주했습니다.</string>
+  <string name="racing_fail">"%1$s 을(를) %2$s 에 실패했습니다."</string>
+  <string name="map_save">"%1$s 을(를) %2$s 에 만들었습니다."</string>
+
+  <!-- firebase string-->
+  <string name="google_storage_bucket_string">gs://tracer-release.appspot.com/</string>
+  <string name="serachHint">장소나 주소를 검색해주세요</string>
+
+
+  <!-- setting-->
+  <string name="logout">로그아웃</string>
+  <string name="my_information">내 정보</string>
+  <string name="unregister">회원탈퇴</string>
+  <string name="settings">설정</string>
+  <string name="language">언어</string>
+  <string name="languageSetting">원하는 언어를 선택하세요.</string>
+  <string name="TTS_setting">TTS 설정</string>
+  <string name="TTS">글자 읽어주기</string>
+  <string name="TTS_check">Text-to-Speech 안내 여부</string>
+  <string name="noticeSetting">알림 설정</string>
+  <string name="noticeSound">알림을 소리로 받습니다</string>
+  <string name="noticeCheck">알림 여부</string>
+  <string name="lockScreenSetting">잠금화면 설정</string>
+  <string name="lockScreenBody">잠금화면 설정 시 기록 측정 가능</string>
+  <string name="lockScreenCheck">잠금화면 여부</string>
+
+  <!-- LcokScreen -->
+  <string name="m">m</string>
+  <string name="km_h">Km/h</string>
+  <string name="unlock">슬래이드해서 잠금해체</string>
+  <!-- TTS -->
+  <string name="pushthestartbutton">시작버튼을 누르면 러닝이 시작됩니다</string>
+  <string name="startRunning">러닝을 시작합니다</string>
+  <string name="finishRunning">러닝을 종료합니다</string>
+
+  <string name="goToStartPoint">시작 위치로 이동하세요</string>
+  <string name="startRacing">레이싱을 시작합니다</string>
+  <string name="finishRacing">레이싱을 종료합니다</string>
+  <string name="execute">실행수</string>
+  <string name="likes">좋아요</string>
+  <string name="select_type">유형을 선택해주세요.</string>
+  <string name="recording">기록용</string>
+  <string name="around">주변</string>
+  <string name="start_running">시작버튼을 누르면 러닝이 시작됩니다</string>
+  <string name="Distance_km">거리</string>
+  <string name="Time">시간</string>
+  <string name="speed_km">속력</string>
+  <string name="pause_mode">일시정지를 하게 되면\n경쟁 모드 업로드가 불가합니다.\n\n일시정지를 하시겠습니까?</string>
+  <string name="stop_save">지금 정지하시면 저장이 불가능합니다.\n\n정지하시겠습니까?</string>
+  <string name="twohundred_save">거리가 200m 미만일때\n정지하시면 저장이 불가능합니다.\n\n정지하시겠습니까?</string>
+  <string name="like_logout">로그아웃하시겠습니까?</string>
+  <string name="sort">정렬 기준</string>
+  <string name="execute_order">실행순</string>
+  <string name="like_order">좋아요순</string>
+  <string name="delete_all">전체 삭제</string>
+  <string name="apply">적용하기</string>
+  <string name="restart">재시작</string>
+  <string name="fail">실패</string>
+  <string name="enter_address">주소를 입력해주세요</string>
+  <string name="press_hold">종료를 원하시면 길게 눌러주세요</string>
+  <string name="sorry">Sorry</string>
+  <string name="not_search">검색결과가 없습니다</string>
+  <string name="cannot_find">위치를 찾을 수 없습니다.</string>
+  <string name="startpoint">\"시작포인트 \"</string>
+  <string name="only_start">m 안에서만 시작할 수 있습니다</string>
+  <string name="move_startpoint">시작 포인트로 이동하십시오.\n시작포인트까지 남은거리\n</string>
+  <string name="how_type">어떤 유형으로 경기하시겠습니까?\n\n랭킹 기록용 : 랭킹 등록 가능</string>
+  <string name="want_start">시작을 원하시면 START를 누르세요</string>
+  <string name="deselect_photo">사진 선택 취소</string>
+  <string name="cannot_save">지금 정지하시면 저장이 불가능합니다.\n\n정지하시겠습니까?</string>
+  <string name="pause_notsave">일시정지를 하게 되면\n랭킹등록이 불가합니다.\n\n일시정지를 하시겠습니까?</string>
+  <string name="route_deviates">\n(주의)경로이탈이</string>
+  <string name="resgisration">초 이상이되면 랭킹등록을 못합니다.</string>
+  <string name="out_of_route">\"경로이탈 \"</string>
+  <string name="altitude">고도</string>
+  <string name="speed">속도</string>
+  <string name="Are_you_sure_to_delete_this">이 달리기를 삭제하시겠습니까?</string>
+
+  <!--activity_racing_finish-->
+  <string name="my_rank">내 순위</string>
+  <string name="top3_rank">TOP 3</string>
+  <string name="record_comparison">기록 비교</string>
+  <string name="max_speed">최고 속력</string>
+  <string name="avg_speed">평균 속룍</string>
+
+  <!--activity_racing_select_people-->
+  <string name="selection_complete">선택 완료</string>
+  <string name="max_five_select">가상 레이싱 할 상대를 최대 5명 선택해주세요</string>
+  <string name="select_people">가상 레이싱 상대방 선택</string>
+  <string name="max_five">최대 5명까지만 선택 가능합니다</string>
+  
+  <string name="challenge">챌린지</string>
+</resources>

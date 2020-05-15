@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:paddingTop="10dp"
+  android:paddingBottom="10dp"
+  android:background="@color/white">
+
+  <TextView
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:id="@+id/profileFragmentGridMapDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:text="날짜"
+    style="@style/tuneText"
+    android:layout_marginBottom="5dp"
+    android:background="@color/lightgray"/>
+
+  <LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/profileFragmentRouteGridImage"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:background="@color/gray"
+      android:scaleType="fitXY" />
+
+    <LinearLayout
+      android:layout_marginStart="10dp"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center_vertical">
+
+
+      <TextView
+        android:id="@+id/profileFragmentGridMapTitle"
+        style="@style/blackMediumText18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="맵 제목" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+          android:layout_weight="1"
+          android:id="@+id/profileFragmentDistance"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/distance_display"
+          android:textSize="17dp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:layout_weight="1"
+          android:id="@+id/profileFragmentTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ellipsize="marquee"
+          android:singleLine="true"
+          android:text="시간 표시"
+          android:textSize="16dp"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:id="@+id/profileHeartImage"
+          android:layout_width="26dp"
+          android:layout_height="26dp"
+          android:src="@drawable/ic_favorite_border_black_24dp"
+          android:alpha="0.8"/>
+
+        <TextView
+          android:layout_weight="1"
+          android:layout_marginLeft="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:id="@+id/profileFragmentLike"/>
+
+        <ImageView
+          android:layout_width="26dp"
+          android:layout_height="26dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_sneaker_for_running"/>
+
+        <TextView
+          android:layout_weight="1"
+          android:layout_marginLeft="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:id="@+id/profileFragmentExecutes"/>
+
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+      android:layout_gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="45dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/ic_chevron_right_black_24dp"/>
+  </LinearLayout>
+</LinearLayout>
